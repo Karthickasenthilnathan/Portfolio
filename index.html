@@ -14,15 +14,16 @@
     <div class="logo">S Karthicka</div>
 
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Education</a>
-      <a href="#">Skills</a>
-      <a href="#">Projects</a>
-      <a href="#">Publications</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <!--<a href="#">Publications</a>-->
       
     </div>
   </nav>
+  <section id="home">
   <div class="intro-section">
   <h1>Hi, I'm <span class="name">Karthicka</span></h1>
   <div class="scroll-container">
@@ -34,15 +35,295 @@
     </div>
   </div>
   <div class="CTA-buttons">
-    <button class="contact_btn" id="openContactBtn">Contact</button>
-    <button class="view_projects_btn">View Projects</button>
+    <button class="contact_btn" id="openContactBtn" aria-haspopup="dialog" aria-controls="contactModal">Contact</button>
+<!-- Modal  -->
+<div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="contactTitle">
+  <div class="modal-overlay" data-close="true"></div>
+
+  <div class="modal-card" role="document">
+    <button class="modal-close" id="closeContactBtn" aria-label="Close contact panel">&times;</button>
+
+    <h3 id="contactTitle">Let's Connect</h3>
+    <p class="modal-sub">Reach out to me— I'm happy to chat about projects, internships or collaborations.</p>
+
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:karthickamanimala@gmail.com" target="_blank" rel="noopener">
+        <img src="icons/pngtree-gmail-logo-png-image_282635.jpg" alt="Gmail" />
+        <span>Gmail</span>
+      </a>
+
+      <a class="contact-item" href="https://www.linkedin.com/in/skarthicka/" target="_blank" rel="noopener">
+        <img src="icons/LinkedIn_icon.svg.png" alt="LinkedIn" />
+        <span>LinkedIn</span>
+      </a>
+
+      <a class="contact-item" href="https://github.com/Karthickasenthilnathan" target="_blank" rel="noopener">
+        <img src="icons/github-142-svgrepo-com.svg" alt="GitHub" />
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <div class="modal-actions">
+      <a class="btn ghost" href="mailto:yourmail@gmail.com" target="_blank" rel="noopener">Email Me</a>
+      <button class="btn" id="closeActionBtn">Close</button>
+    </div>
+  </div>
 </div>
+
+    <a href="#projects" class="btn-view">View Projects</a>
+
 </div>
+</section>
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    My journey in tech began during my first year of engineering, where I started building a strong foundation in programming with <strong>Java</strong>, and gradually stepped into the world of web development through <strong>HTML</strong> and <strong>CSS</strong>. It was during this time that I discovered how much I enjoyed bringing ideas to life through code.
+  </p>
+  <p>
+    In my second semester, I became more curious about making websites interactive, which led me to learn <strong>JavaScript</strong> and <strong>React.js</strong>. Alongside that, I also picked up <strong>Python</strong>, which opened new doors to exploring automation and AI.
+  </p>
+  <p>
+    Now, in my third semester, I’m actively solving challenges on <strong>HackerRank</strong> and <strong>LeetCode</strong> to sharpen my problem-solving skills. I’ve also started exploring <strong>web security</strong> and <strong>Linux</strong>, while diving deeper into <strong>AI and ML technologies</strong> like <strong>OpenCV</strong>.
+  </p>
+  <p>
+    Beyond academics, I’m proud to serve as the <strong>Department Coordinator of Unnat Bharat Abhiyan (UBA)</strong>. Through this initiative, I’ve had the opportunity to volunteer for <strong>Poonthandalam village’s wellness program</strong> — conducting career guidance sessions for government school students and participating in several household surveys. These experiences helped me grow as a person and connect technology with social impact.
+  </p>
+  <p>
+    Every step so far has been a mix of learning, experimenting, and growing — and I’m excited to see where this journey takes me next.
+  </p>
+</section>
+<section id="education">
+  <h2 style="text-align: center;">Education</h2>
+
+  <div class="education-container">
+    <!-- University -->
+    <div class="edu-card">
+      <h3>Sri Sairam Engineering College</h3>
+      <p class="course">B.E in Computer Science and Engineering specializing in Cyber Security</p>
+      <p class="year">2024 - 2028</p>
+      <p class="highlight"><strong>CGPA:</strong> 9.05 (Current)</p>
+      <div class="semester-container">
+        <div class="semester-box">
+          <h4>Semester I</h4>
+          <p>8.756 GPA</p>
+        </div>
+        <div class="semester-box">
+          <h4>Semester II</h4>
+          <p>9.4 GPA</p>
+        </div>
+        <div class="semester-box">
+          <h4>Semester III</h4>
+          <p>Ongoing</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Class XII -->
+    <div class="edu-card">
+      <h3>Velammal Vidyalaya</h3>
+      <p class="course">Higher Secondary (Class XII)</p>
+      <p class="year">2023 - 2024</p>
+      <p class="description" style="color:#bfc0d1;margin-bottom:8px">Subjects: Math,physics,chemistry and Biology</p>
+      <p class="highlight"><strong>Percentage:</strong> 92.4%</p>
+    </div>
+
+    <!-- Class X -->
+    <div class="edu-card">
+      <h3>Velammal Vidyalaya</h3>
+      <p class="course">SSLC (Class X)</p>
+      <p class="year">2021 - 2022</p>
+      <p class="highlight"><strong>Percentage:</strong> 95.6%</p>
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <h2 style="text-align: center;">Skills & Expertise</h2>
+
+  <div class="skills-container">
+    <!-- Programming Languages -->
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <div class="language-container" style="margin-bottom: 50px;">
+        <div class="language-card">
+          <img src="icons/icons8-java-50.png" alt="Java Logo" class="language-icon">
+          <h4>Java</h4>
+        </div>
+
+        <div class="language-card">
+          <img src="icons/icons8-javascript-logo-50.png" alt="JavaScript Logo" class="language-icon">
+          <h4>JavaScript</h4>
+        </div>
+
+        <div class="language-card">
+          <img src="icons/icons8-python-50.png" alt="Python Logo" class="language-icon">
+          <h4>Python</h4>
+        </div>
+
+        <div class="language-card">
+          <img src="icons/icons8-c-50.png" alt="C Logo" class="language-icon">
+          <h4>C</h4>
+        </div>
+      </div>
+    </div>
+    <!-----Web Development ---->
+    <div class="skill-category">
+      <h3>Web Development</h3>
+            <div class="language-container">
+        <div class="language-card">
+          <img src="icons/icons8-html-30.png" alt="HTML Logo" class="language-icon">
+          <h4>HTML</h4>
+        </div>
+
+        <div class="language-card">
+          <img src="icons/icons8-css-50.png" alt="css Logo" class="language-icon">
+          <h4>CSS</h4>
+        </div>
+
+        <div class="language-card">
+          <img src="icons/icons8-javascript-logo-50.png" alt="js Logo" class="language-icon">
+          <h4>JavaScript</h4>
+        </div>
+
+        <div class="language-card">
+          <img src="icons/icons8-react-js-50.png" alt="C Logo" class="language-icon">
+          <h4>React JS</h4>
+        </div>
+      </div>
+      <!--Cyber securityyyyy-->
+    <div class="skill-category" style="margin-top: 50px;">
+      <h3>Cyber Security</h3>
+            <div class="language-container">
+        <div class="language-card">
+          <img src="icons/icons8-kali-linux-100.png" alt="HTML Logo" class="language-icon">
+          <h4>Kali Linux</h4>
+        </div>
+
+  </div>
+</section>
+<section id="projects">
+  <h2 style="text-align: center;">Projects</h2>
+
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="icons/Screenshot 2025-11-09 135857.png" alt="Recipe Finder Screenshot" class="project-img" />
+      <div class="project-info">
+        <h3 class="project-title">Recipe Finder</h3>
+        <p class="project-description">
+          <strong>An intuitive web app to explore new flavors and save your favorite recipes.</strong>
+        </p>
+
+        <h4 class="features-heading">Key Features:</h4>
+        <ul>
+          <li>Integrated TheMealDB API to fetch and display recipes with filtering by categories.</li>
+          <li>Clean, responsive UI using Flexbox & Grid.</li>
+        </ul>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>TheMealDB API</span>
+          <span>useState / useEffect</span>
+          <span>CSS (Flexbox & Grid)</span>
+          <span>Vercel</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-gh" href="https://github.com/Karthickasenthilnathan/Recipe-Finder" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.2-1.8-1.2-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 1.5.8 1.5.9 1.6 2.5 1.2 3.1.9.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6A4.7 4.7 0 0 1 8 9.3a4.3 4.3 0 0 1 .1-3.2s.9-.3 3 .9a10.4 10.4 0 0 1 5.4 0c2.1-1.2 3-.9 3-.9.1 1.1.1 1.9.1 3.2 0 4.6-2.8 5.6-5.4 6 .4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.5 12 12 0 0 0 12 .5z"/></svg>
+            View on GitHub
+          </a>
+
+          <a class="btn btn-live" href="https://recipe-finder-eight-mauve.vercel.app/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 17l5-5-5-5v10zM4 6h2v12H4z"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="icons/Screenshot 2025-11-09 140015.png" alt="Expense Tracker Screenshot" class="project-img" />
+      <div class="project-info">
+        <h3 class="project-title">Expense Tracker</h3>
+        <p class="project-description">Track, analyze, and control your finances with real-time expense insights.</p>
+
+        <h4 class="features-heading">Key Features:</h4>
+        <ul>
+          <li>Responsive expense tracking that categorizes and visualizes spending.</li>
+          <li>Interactive charts using Recharts for patterns and trends.</li>
+        </ul>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Recharts</span>
+          <span>Local Storage</span>
+          <span>CSS</span>
+          <span>Vercel</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-gh" href="https://github.com/Karthickasenthilnathan/Expense-Tracker" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.2-1.8-1.2-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 1.5.8 1.5.9 1.6 2.5 1.2 3.1.9.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6A4.7 4.7 0 0 1 8 9.3a4.3 4.3 0 0 1 .1-3.2s.9-.3 3 .9a10.4 10.4 0 0 1 5.4 0c2.1-1.2 3-.9 3-.9.1 1.1.1 1.9.1 3.2 0 4.6-2.8 5.6-5.4 6 .4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.5 12 12 0 0 0 12 .5z"/></svg>
+            View on GitHub
+          </a>
+
+          <a class="btn btn-live" href="https://expense-tracker-gray-nine.vercel.app/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 17l5-5-5-5v10zM4 6h2v12H4z"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="icons/Screenshot 2025-11-09 140200.png" alt="Task Flow Screenshot" class="project-img" />
+      <div class="project-info">
+        <h3 class="project-title">Task Flow</h3>
+        <p class="project-description">
+          A streamlined task management app that helps you add, track and complete tasks with visual clarity.
+        </p>
+
+        <h4 class="features-heading">Key Features:</h4>
+        <ul>
+          <li>Responsive, mobile-first UI for task management.</li>
+          <li>Simple, scalable design focused on productivity.</li>
+        </ul>
+
+        <div class="tech-stack">
+          <span>React</span>
+          <span>Local Storage</span>
+          <span>CSS</span>
+          <span>Vercel</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-gh" href="https://github.com/Karthickasenthilnathan/TaskFlow" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A12 12 0 0 0 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.2-1.8-1.2-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 1.5.8 1.5.9 1.6 2.5 1.2 3.1.9.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.4-5.5-6A4.7 4.7 0 0 1 8 9.3a4.3 4.3 0 0 1 .1-3.2s.9-.3 3 .9a10.4 10.4 0 0 1 5.4 0c2.1-1.2 3-.9 3-.9.1 1.1.1 1.9.1 3.2 0 4.6-2.8 5.6-5.4 6 .4.4.7 1 .7 2v3c0 .3.2.7.8.6A12 12 0 0 0 24 12.5 12 12 0 0 0 12 .5z"/></svg>
+            View on GitHub
+          </a>
+
+          <a class="btn btn-live" href="https://task-flow-kappa-two.vercel.app/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 17l5-5-5-5v10zM4 6h2v12H4z"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
  
   
   
-
+<script src="index.js"></script>
 </body>
 </html>
