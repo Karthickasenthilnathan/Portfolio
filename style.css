@@ -1,0 +1,129 @@
+:root{
+  --nav-height: 72px;        /* tweak if your navbar height differs */
+  --accent: #F3B94E;
+  --band: #2C2C3E;
+}
+
+/* reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #fff; color: #111; }
+
+
+.navbar {
+  background-color: var(--band);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  height: var(--nav-height);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #bfc0d1;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 8px;
+  transition: color .18s ease, transform .08s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+
+.intro-section {
+  background-color: #2C2C3E; 
+  color: white;
+  text-align: center;
+  padding: 80px 0; /* space around content */
+  position: relative;
+  overflow: hidden; /* prevent scroll overflow */
+}
+
+/* Heading style */
+.intro-section h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+/* Make the scroll text move full width */
+.scroll-container {
+  width: 100vw; /* full screen width */
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLeft 15s linear infinite;
+}
+
+.scroll-text span {
+  display: inline-block;
+  margin-right: 100px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #F3B94E; /* accent color */
+}
+
+/* Keyframes for smooth full-screen scrolling */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* name highlighting part*/
+.name {
+  color: #F3B94E;
+}
+
+.CTA-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;              /* to give space between buttons */
+  margin: 80px auto;  /*adds 80 px above and below the button containing div, auto adds margin left and right automatically centering the buttons*/
+  background-color:  #2C2C3E;     
+}
+.CTA-buttons button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact_btn {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #bfc0d1;
+}
+.contact_btn:hover {
+  background-color: #bfc0d1;
+  color: #2C2C3E; /* contrast with dark background */
+}
